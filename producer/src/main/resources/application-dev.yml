@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: 10.0.0.205
+    port: 5672
+    virtual-host: /
+    username: nanshen
+    password: nanshen
+  datasource:
+    username: root
+    password: Miniwan_123
+    url: jdbc:mysql://10.0.0.203:3306/weekly?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
