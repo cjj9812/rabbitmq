@@ -15,7 +15,11 @@ public class ProducerService3 {
     RabbitTemplate rabbitTemplate;
 
     public void sendMsg(){
-        String msg="今天深圳天气大雨转暴雨";
-//        rabbitTemplate.convertAndSend(RabbitConfig3.EXCHANGE_NAME,RabbitConfig3.ROUTING_KEY,msg);
+        String msg="Q1:key1";
+        rabbitTemplate.convertAndSend(RabbitConfig3.EXCHANGE_NAME,RabbitConfig3.Q1_ROUTING_KEY,msg);
+        String msg2="Q1:key2";
+        rabbitTemplate.convertAndSend(RabbitConfig3.EXCHANGE_NAME,RabbitConfig3.Q1_ROUTING_KEY2,msg2);
+        String msg3="Q2:key3";
+        rabbitTemplate.convertAndSend(RabbitConfig3.EXCHANGE_NAME,RabbitConfig3.Q2_ROUTING_KEY,msg3);
     }
 }

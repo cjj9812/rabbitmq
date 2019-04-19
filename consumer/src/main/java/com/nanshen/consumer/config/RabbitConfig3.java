@@ -1,4 +1,4 @@
-package com.nanshen.producer.config;
+package com.nanshen.consumer.config;
 
 
 import org.springframework.amqp.core.*;
